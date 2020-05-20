@@ -1,6 +1,5 @@
 import * as angular from 'angular';
 
-// This creates an AngularJS module called trailPageModule.
 export const trailPageModule = angular.module('trailPageModule', [])
 
 	// The AngularJS recipe specifies a new component called trailPage that will display the new page.
@@ -23,11 +22,11 @@ export const trailPageModule = angular.module('trailPageModule', [])
 				toolbarService.addItems([{
 					type: 'ACTION',
 					key: 'trail.button',
-					nameI18nKey: 'Trail',
+					nameI18nKey: 'Test',
 
 					// This is the callback function that will be executed when the toolbar button is clicked.
 					callback: () => {
-						alertService.showInfo("Hello from the trail");
+						alertService.showInfo("Hello World");
 					},
 					iconClassName: 'icon-duplicate se-toolbar-menu-ddlb--button__icon',
 				}]);

@@ -15,8 +15,6 @@ angular.module('smartedittrailContainerTemplates', []).run(['$templateCache', fu
   $templateCache.put('web/features/smartedittrailContainer/trailPage/trailPageTemplate.html',
     "<!-- To contain the top toolbar (and make it look SmartEdit like ) -->\r" +
     "\n" +
-    "<script>console.log(\"TEEEEEEEEEEEEEEEEEMPLAAAAAAAAAAAAAAATE\")</script>\r" +
-    "\n" +
     "<<div class=\"se-toolbar-group\">\r" +
     "\n" +
     "    <toolbar data-css-class=\"se-toolbar--shell\"\r" +
@@ -41,7 +39,9 @@ angular.module('smartedittrailContainerTemplates', []).run(['$templateCache', fu
     "\n" +
     "    Trail Page\r" +
     "\n" +
-    "</div>>"
+    "</div>>\r" +
+    "\n" +
+    "<script>console.log(\"TEEEEEEEEEEEEEEEEEMPLAAAAAAAAAAAAAAATE\")</script>"
   );
 
 }]);

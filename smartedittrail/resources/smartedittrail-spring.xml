@@ -7,4 +7,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd
            ">
+
+	<alias name="testServiceImpl" alias="testService"/>
+	<bean id="testServiceImpl" class="com.sqli.smartedittrail.TestServiceImpl"/>
+
 </beans>

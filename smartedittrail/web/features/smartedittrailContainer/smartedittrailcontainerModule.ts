@@ -4,7 +4,6 @@
 import {doImport} from './forcedImports';
 doImport();
 import {IFeatureService, SeModule, SeRouteService} from 'smarteditcommons';
-// @ts-ignore
 import {trailPageModule} from './trailPage/trailPage';
 
 /**
@@ -17,6 +16,7 @@ import {trailPageModule} from './trailPage/trailPage';
 	imports: [
 		'smarteditServicesModule',
 		'abAnalyticsToolbarItemModule',
+		trailPageModule.name
 	],
 
 	config: ($routeProvider: angular.route.IRouteProvider) => {
